@@ -30,4 +30,9 @@ switch ($path) {
     default:
         echo "Erreur 404";
         break;
+    case '/login':
+        $message = "Adresse email ou mot de passe incorrect.";
+        require '../template/template_login.php';
+        break;
+        
 }
